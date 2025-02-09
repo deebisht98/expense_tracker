@@ -1,0 +1,19 @@
+{
+  "name": "expense_tracker",
+  "module": "server/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "zod": "^3.24.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.2",
+    "hono": "^4.7.0"
+  }
+}
