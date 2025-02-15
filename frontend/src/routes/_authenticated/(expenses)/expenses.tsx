@@ -41,7 +41,7 @@ function RouteComponent() {
           <TableHead className="w-[100px]">Id</TableHead>
           <TableHead>Title</TableHead>
           <TableHead>Date</TableHead>
-          <TableHead className="text-right">Amount</TableHead>
+          <TableHead>Amount</TableHead>
           <TableHead>Delete</TableHead>
         </TableRow>
       </TableHeader>
@@ -78,7 +78,7 @@ function RouteComponent() {
                   <TableCell>
                     <Skeleton className="h-2" />
                   </TableCell>
-                  <TableCell className="text-right">
+                  <TableCell>
                     <Skeleton className="h-2" />
                   </TableCell>
                   <TableCell>
@@ -91,7 +91,7 @@ function RouteComponent() {
                 <TableCell className="font-medium">{expense.id}</TableCell>
                 <TableCell>{expense.title}</TableCell>
                 <TableCell>{expense.date.split("T")[0]}</TableCell>
-                <TableCell className="text-right">$ {expense.amount}</TableCell>
+                <TableCell>$ {expense.amount}</TableCell>
                 <TableCell>
                   <ExpenseDeleteButton id={expense.id} />
                 </TableCell>
