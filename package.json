@@ -4,10 +4,15 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch server/index.ts",
-    "build": "bun server/index.ts"
+    "build": "bun server/index.ts",
+    "dbstudio": "bunx drizzle-kit studio",
+    "dbgenerate": "bunx drizzle-kit generate",
+    "dbmigrate": "bunx drizzle-kit migrate",
+    "dbpush": "bunx drizzle-kit push"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "drizzle-kit": "^0.30.4",
     "zod": "^3.24.1"
   },
   "peerDependencies": {
@@ -15,6 +20,10 @@
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
-    "hono": "^4.7.0"
+    "@kinde-oss/kinde-typescript-sdk": "^2.9.1",
+    "drizzle-orm": "^0.39.3",
+    "drizzle-zod": "^0.7.0",
+    "hono": "^4.7.0",
+    "postgres": "^3.4.5"
   }
 }
